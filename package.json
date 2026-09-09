@@ -1,0 +1,33 @@
+{
+  "name": "reward-todo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first reward checklist, calendar, reminders, and AI tools.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yylinchuan/Reward-Todo.git"
+  },
+  "homepage": "https://github.com/yylinchuan/Reward-Todo#readme",
+  "bugs": {
+    "url": "https://github.com/yylinchuan/Reward-Todo/issues"
+  },
+  "type": "commonjs",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "start": "node ./bin/todo-service.js serve",
+    "mcp": "node ./bin/todo-service.js mcp",
+    "mcp:gateway": "node ./bin/todo-service.js mcp-gateway",
+    "web:dev": "npm --prefix web run dev",
+    "web:build": "npm --prefix web run build",
+    "status": "node ./bin/todo-service.js status",
+    "backup": "node ./bin/todo-service.js backup",
+    "tick": "node ./bin/todo-service.js tick",
+    "autostart:install": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/install-autostart.ps1",
+    "autostart:remove": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/remove-autostart.ps1",
+    "service:stop": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/stop-service.ps1",
+    "share:plan": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/install-for-cyberboss.ps1 -Mode Plan",
+    "share:doctor": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/doctor.ps1",
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
