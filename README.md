@@ -1,6 +1,6 @@
 # Reward-Todo
 
-一个独立、可关闭、local-first 的奖励待办、固定日常打卡与完成日历。它不依赖 CyberBoss 才能保存数据；CyberBoss 只是可选的 AI 与主动提醒适配器。
+一个独立、可关闭、local-first 的奖励待办、固定日常打卡与完成日历。CyberBoss 是可选的 AI 与主动提醒适配器。
 
 ## 当前能力
 
